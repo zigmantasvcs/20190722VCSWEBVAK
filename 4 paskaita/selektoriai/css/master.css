@@ -1,0 +1,21 @@
+*{
+	color: silver;
+	font-family: Arial;
+/*	border: 1px solid black;*/
+	
+/*	laba diena*/
+}
+
+[src^="images/dog"]{
+	width: 100px;
+}
+
+/* kai išvardinami elementai*/
+th, td{
+	background-color: blue;
+}
+
+/* kai einama gilyn*/
+table tr:nth-child(2) td:nth-child(2){
+	background-color: red;
+}

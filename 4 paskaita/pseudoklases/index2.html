@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<style>
+		.box{
+			width: 100px;
+			height: 100px;
+			background-color: purple;
+			border: 1px solid black;
+			float: left;
+			border-radius: 50px;
+		}
+		
+		.box:nth-child(2n+3){
+			background-color: green;
+		}
+		
+		table{
+			width: 100%;
+			border-collapse: collapse;
+		}
+		
+		table, tr, th, td{
+			border-bottom: 1px solid black;
+		}
+		
+		tr:nth-child(2n+3){
+			background-color: silver;
+		}
+		
+		tr:nth-child(2n+2){
+			background-color: yellow;
+		}
+		
+		tr td:nth-child(2){
+			text-align: right;
+		}
+		
+		table tr:first-child{
+/*			background-color: rgba(203, 231, 187, 0.5);*/
+			background-color: #cbe7bb;
+		}
+		body{
+			background-color: #e8baba;
+		}
+	</style>
+</head>
+
+<body>
+<!--
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+-->
+	
+	<table>
+		<tr>
+			<th>Data</th>
+			<th>Suma</th>
+			<th>Kategorija</th>
+		</tr>
+		<tr>
+			<td>2019-07-01</td>
+			<td>8.50 &euro;</td>
+			<td>Maistas</td>
+		</tr>
+		<tr>
+			<td>2019-07-02</td>
+			<td>49.99 &euro;</td>
+			<td>Kuras</td>
+		</tr>
+		<tr>
+			<td>2019-07-02</td>
+			<td>100.99 &euro;</td>
+			<td>Pramogos</td>
+		</tr>
+		<tr>
+			<td>2019-07-03</td>
+			<td>50 &euro;</td>
+			<td>Dovanos</td>
+		</tr>
+	</table>
+	
+</body>
+</html>

@@ -1,0 +1,22 @@
+body{
+	
+}
+.box{
+	position: absolute;
+	border: 1px solid black;
+	background-color: green;
+	height: 100vh;
+	width: 100vw;
+	box-sizing: border-box;
+	animation-name: example;
+	animation-duration: 4s;
+}
+
+@keyframes example {
+  from {background-color: green;}
+  to {background-color: yellow;}
+}
+
+.box{
+	background-color: yellow;
+}
