@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<style>
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+		}
+
+		#dezute1{
+			background-color: blue;
+		}
+
+		#dezute2{
+			background-color: yellow;
+		}
+
+		#dezute3{
+			background-color: green;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="dezute1"></div>
+	<div id="dezute2"></div>
+	<div id="dezute3"></div>
+	<script>
+		var elements = document.querySelectorAll("div");
+		elements.forEach(function(item){
+			item.addEventListener("click", function(){
+					this.remove();
+			});
+		});
+//
+//		for(let i = 1; i<=3;i++){
+//			document.getElementById(elements[i]+i)
+//				.addEventListener("click", function(){
+//					this.remove();
+//			})
+//		}
+
+	</script>
+</body>
+</html>
