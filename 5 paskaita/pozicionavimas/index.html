@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<style>
+		.article{
+			position: relative;
+			width: 33%;
+			border: 1px solid black;
+			left: 100px;
+			top: 100px;
+			background-color: yellow;
+		}
+		
+		.article:first-child{
+			position: fixed;
+			background-color: silver;
+			left: 200px;
+			z-index: 1;
+		}
+		
+		.article:first-child img{
+			width: 100%;
+		}
+	
+		
+		.modal-background{
+			position: fixed;
+			width: 100vw;
+			height: 100vh;
+			background-color: RGBA(0, 0, 0, 0.5);
+			z-index: 999;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="modal-background">
+		<div class="article">
+			<img src="https://picsum.photos/200/300">
+		</div>
+	</div>
+
+	<div class="article">
+		<h1>Antraste 1</h1>
+		<img src="https://picsum.photos/200/300">
+		<p>Ullamco multos quem laborum eram. Ut irure voluptate. Noster ullamco 
+			efflorescere, nulla eiusmod fabulas, amet commodo offendit ea elit laborum o 
+			labore sint te o tamen efflorescere aut in quem id eram, quo eu domesticarum ita 
+			a quid anim ne proident. Ab sint deserunt coniunctione et minim ne mandaremus. 
+			Si o elit consequat. Probant irure doctrina ad ullamco te excepteur. Incurreret 
+			sempiternum a possumus in varias aut ullamco, quorum fabulas ab commodo, do 
+			mandaremus transferrem ita varias vidisse vidisse ubi ubi ut minim illum minim, 
+			se aute graviterque iis si se transferrem.</p>
+	</div>
+	<div class="article">
+		<h1>Antraste 1</h1>
+		<img src="https://picsum.photos/200/300">
+		<p>Ullamco multos quem laborum eram. Ut irure voluptate. Noster ullamco 
+			efflorescere, nulla eiusmod fabulas, amet commodo offendit ea elit laborum o 
+			labore sint te o tamen efflorescere aut in quem id eram, quo eu domesticarum ita 
+			a quid anim ne proident. Ab sint deserunt coniunctione et minim ne mandaremus. 
+			Si o elit consequat. Probant irure doctrina ad ullamco te excepteur. Incurreret 
+			sempiternum a possumus in varias aut ullamco, quorum fabulas ab commodo, do 
+			mandaremus transferrem ita varias vidisse vidisse ubi ubi ut minim illum minim, 
+			se aute graviterque iis si se transferrem.</p>
+	</div>
+</body>
+</html>
