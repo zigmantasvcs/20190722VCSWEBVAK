@@ -1,7 +1,30 @@
+body{
+	margin: 0;
+}
+
 .row{
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
+}
+
+.row-centered{
+	justify-content: center;
+/*	align-items: center;*/
+}
+
+.row-left{
+	justify-content: flex-start;
+/*	align-items: center;*/
+}
+
+.header-text{
+	margin: 100px;
+}
+
+.footer-text, .footer-map{
+	margin: 20px;
+	
 }
 
 /* iki 600 px imtinai*/
@@ -67,13 +90,33 @@
 
 article{
 	margin: 10px;
-	border: 1px solid black;
+/*	border: 1px solid black;*/
 	padding: 10px;
+	text-align: justify;
+}
+
+article img, .image img{
+	width: 100%;
+}
+
+.image{
+	margin: 10px;
 }
 
 nav{
-	position: fixed;
+	position: sticky;
+	top:0;
+}
+
+footer, nav{
 	background-color: black;
+	color: white;
+}
+
+footer{
+	position: relative;
+	bottom: 0;
+	width: 100%;
 }
 
 nav ul{
