@@ -13,6 +13,13 @@ body{
 /*	align-items: center;*/
 }
 
+
+.row-vertical{
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+
 .row-left{
 	justify-content: flex-start;
 /*	align-items: center;*/
