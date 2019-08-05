@@ -37,3 +37,14 @@ function arTeisingasSlaptazodis(paduodamasSlaptazodis){
 		document.write("Jūs užblokuotas amžiams!");
 	}
 }
+
+
+
+let vardas = "jonas";
+
+if(vardas == "jonas"){
+	let pavarde = "jonaitis"; 
+	// pakeisk pries pavarde i var ir paziurek ka rodo alert apacioj
+}
+
+alert(pavarde);
