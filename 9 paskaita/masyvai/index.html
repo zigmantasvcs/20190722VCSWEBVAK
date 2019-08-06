@@ -26,6 +26,27 @@
 		//document.write(savaiteDienos[savDiena]);
 		spausdinkSavaitesDienasISarasa();
 		
+		let sarasas = ["Jonas Jonaitis", "Onutė Pakalnutė", "Juozas Juozaitis", "Marytė Rytė", "Antanas Antanaitis"];
+		document.write("<ol>");
+		for(var i = 0; i<sarasas.length;i++){
+			document.write("<li>" + sarasas[i]+"</li>");
+		}
+		document.write("</ol>");
+		
+		let elementas = document.querySelector("#pic1");
+		
+		elementas.addEventListener("click", function(){
+			alert("Jūs paspaudėte ant elemento!");
+		});
+
+
+		var students = [
+			{name: "Jonas", surname: "Jonaitis", age: 18},
+			{name: "Onutė", surname: "Pakalnutė", age: 19},
+			{name: "Marytė", surname: "Rytė", age: 18},
+			{name: "Juozas", surname: "Juozaitis", age: 20}
+		];
+		
 	</script>
 </body>
 </html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+</head>
+
+<body>
+	<script>
+	
+		let student1 = {
+			name: "Jonas",
+			surname: "Jonaitis",
+			age: 19
+		};
+		
+		let student2 = {
+			name: "Onutė",
+			surname: "Pakalnutė",
+			age: 22
+		};
+		
+		let studentai = [];
+		
+		studentai.push(student1);
+		studentai.push(student2);
+		
+//		document.write(studentai);
+		
+//		document.write(studentai[0].name +  " " + studentai[0].surname + " " + studentai[0].age + "<br>");
+//		
+//		document.write(studentai[1].name +  " " + studentai[1].surname + " " + studentai[1].age + "<br>");
+		
+		for(let i = 0;i < studentai.length; i++){
+			document.write(studentai[i].name +  " " + studentai[i].surname + " " + studentai[i].age + "<br>");
+		}
+		
+	</script>
+</body>
+</html>

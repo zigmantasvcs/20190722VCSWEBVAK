@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+</head>
+
+<body>
+	<div>
+		Vardas: <br>
+		<input type="text" id="name" >
+	</div>
+	<div>
+		Pavardė: <br>
+		<input type="text" id="surname" >
+	</div>
+	
+	<div>
+		Amžius: <br>
+		<input type="text" id="age" >
+	</div>
+	
+	<div>
+		<input type="button" id="ok" value="OK" >
+	</div>
+	
+	<div>
+		<input type="button" id="show" value="SHOW" >
+	</div>
+	
+	<script src="js/custom.js"></script>
+	<script>
+		
+		let asmenys = [];
+		
+		let mygtukasOk = document.querySelector("#ok");
+		mygtukasOk.addEventListener("click", function(){
+			
+			//alert("ok veikia");
+			let name = document.querySelector("#name").value;
+			let surname = document.querySelector("#surname").value;
+			let age = document.querySelector("#age").value;
+			
+			asmenys = padetiAsmeniIMasyva(name, surname, age, asmenys);
+			console.log(asmenys);
+		})
+		
+		
+	</script>
+</body>
+</html>
