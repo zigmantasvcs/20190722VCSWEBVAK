@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
 	<link rel="stylesheet" href="css/master.css">
-	<link rel="stylesheet" href="css/gallery.css">
 	<style>
 		header{
 			background-image: url("https://blog.csiro.au/wp-content/uploads/2018/08/file-20180822-149484-cs44toreduced.jpg");
@@ -17,21 +16,20 @@
 			color: white;
 			text-shadow: 5px 5px 10px black;
 		}
+		
+
 	</style>
 </head>
 
 <body>
-	<div class="modal">
-		<div class="left"><input type="button" id="left" value="<<"></div>
-		<div class="center"><img ></div>
-		<div class="right"><input type="button" id="right" value=">>"></div>
-	</div>
+	
 	
 	<header>
 		<div class="row row-centered">
 			<div class="header-text">OPEN SPACE</div>
 		</div>
 	</header>
+	
 	
 	<nav class="row">
 		<ul>
@@ -44,31 +42,69 @@
 	</nav>
 	
 	<div class="empty"></div>
-
 	
-	<div class="container gallery">
-		<div class="row">
-			
-<!--
-			<div class="coll4">
-				<div class="image">
-					<img src="https://picsum.photos/300/200">
-				</div>
-			</div>
-			
-			<div class="coll4">
-				<div class="image">
-					<img src="https://picsum.photos/300/200">
-				</div>
-			</div>
-			
-			<div class="coll4">
-				<div class="image">
-					<img src="https://picsum.photos/300/200">
-				</div>
-			</div>
--->
+	<div class="container">
+		<div class="row row-centered">
+			<div class="coll6">
+				
+				<form>
+					<div class="form-element">
+						<div class="row">
+							<div class="coll6">
+								<div class="label">Vardas:</div>
+							</div>
+							<div class="coll6">
+								<input type="text">
+							</div>
+						</div>
+					</div>
 
+					<div class="form-element">
+						<div class="row">
+							<div class="coll6">
+								<div class="label">Pavardė:</div>
+							</div>
+							<div class="coll6">
+								<input type="text">
+							</div>
+						</div>
+					</div>
+
+
+					<div class="form-element">
+						<div class="row">
+							<div class="coll6">
+								<div class="label">El. paštas:</div>
+							</div>
+							<div class="coll6">
+								<input type="text">
+							</div>
+						</div>
+					</div>
+
+					<div class="form-element">
+						<div class="row">
+							<div class="coll6">
+								<div class="label">Komentaras:</div>
+							</div>
+							<div class="coll6">
+								<textarea></textarea>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-element">
+						<div class="row">
+							<div class="coll6">
+							</div>
+							<div class="coll6">
+								<input type="submit">
+							</div>
+						</div>
+					</div>
+					
+				</form>
+			</div>
 		</div>
 	</div>
 	
@@ -89,13 +125,5 @@
 			</div>
 		</div>
 	</footer>
-	<script src="js/service.js"></script>
-	<script src="js/gallery.js"></script>
-	<script>
-		startGallery();
-		
-		createImageBox("https://picsum.photos/id/124/800/600", 1);
-		createImageBox("https://picsum.photos/id/125/800/600", 2);
-	</script>
 </body>
 </html>

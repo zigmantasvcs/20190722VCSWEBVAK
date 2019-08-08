@@ -47,6 +47,28 @@
 		})
 		
 		
+		let mygtukasShow = document.querySelector("#show");
+		
+		mygtukasShow.addEventListener("mouseover", function(){
+			
+			document.write("<table>");
+			document.write("<tr>");
+			document.write("<th>Vardas</th>");
+			document.write("<th>Pavarde</th>");
+			document.write("<th>Amzius</th>");
+			document.write("</tr>");
+			for(let i = 0; i < asmenys.length; i++){
+				document.write("<tr>");
+				document.write("<td>"+asmenys[i].vardas+"</td>");
+				document.write("<td>"+asmenys[i].pavarde+"</td>");
+				document.write("<td>"+asmenys[i].amzius+"</td>");
+				document.write("</tr>");
+			}
+			
+			document.write("</table>");
+			
+		});
+		
 	</script>
 </body>
 </html>
