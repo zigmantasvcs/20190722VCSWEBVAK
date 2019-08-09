@@ -1,0 +1,156 @@
+body{
+	margin: 0;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.row-centered{
+	justify-content: center;
+/*	align-items: center;*/
+}
+
+
+.row-vertical{
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+
+.row-left{
+	justify-content: flex-start;
+/*	align-items: center;*/
+}
+
+.header-text{
+	margin: 100px;
+}
+
+.footer-text, .footer-map{
+	margin: 20px;
+	
+}
+
+/* iki 600 px imtinai*/
+@media screen AND (max-width:600px){
+/*	renkates jus ar naudoti ar ne*/
+	.container{
+		width: 90%;
+		margin: auto;
+	}
+	.cols1{ width: 8.33%; }
+	.cols2{ width: 16.66%; }
+	.cols3{ width: 25%; }
+	.cols4{ width: 33.33%; }
+	.cols5{ width: 41.66%; }
+	.cols6{ width: 50%; }
+	.cols7{ width: 58.33%; }
+	.cols8{ width: 66.66%; }
+	.cols9{ width: 75%; }
+	.cols10{ width: 83.33%; }
+	.cols11{ width: 91.66%; }
+	.cols12{ width: 100%; }
+}
+
+/* nuo 600 px is daugiau*/
+@media screen AND (min-width:601px){
+	.container{
+		width: 85%;
+		margin: auto;
+	}
+	.colm1{ width: 8.33%; }
+	.colm2{ width: 16.66%; }
+	.colm3{ width: 25%; }
+	.colm4{ width: 33.33%; }
+	.colm5{ width: 41.66%; }
+	.colm6{ width: 50%; }
+	.colm7{ width: 58.33%; }
+	.colm8{ width: 66.66%; }
+	.colm9{ width: 75%; }
+	.colm10{ width: 83.33%; }
+	.colm11{ width: 91.66%; }
+	.colm12{ width: 100%; }
+}
+
+/* nuo 993 px ir daugiau*/
+@media screen AND (min-width:993px){
+	.container{
+		width: 70%;
+		margin: auto;
+	}
+	.coll1{ width: 8.33%; }
+	.coll2{ width: 16.66%; }
+	.coll3{ width: 25%; }
+	.coll4{ width: 33.33%; }
+	.coll5{ width: 41.66%; }
+	.coll6{ width: 50%; }
+	.coll7{ width: 58.33%; }
+	.coll8{ width: 66.66%; }
+	.coll9{ width: 75%; }
+	.coll10{ width: 83.33%; }
+	.coll11{ width: 91.66%; }
+	.coll12{ width: 100%; }
+}
+
+article{
+	margin: 10px;
+/*	border: 1px solid black;*/
+	padding: 10px;
+	text-align: justify;
+}
+
+article img, .image img{
+	width: 100%;
+}
+
+.image{
+	margin: 10px;
+}
+
+nav{
+	position: sticky;
+	top:0;
+}
+
+footer, nav{
+	background-color: black;
+	color: white;
+}
+
+footer{
+	position: relative;
+	bottom: 0;
+	width: 100%;
+}
+
+nav ul{
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+}
+
+nav ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	margin: 10px;
+	padding: 20px;
+}
+nav ul li a:hover{
+	color: black;
+	background-color: white;
+	
+}
+.empty{height: 50px;}
+
+.label{
+	text-align: right;
+	padding-right: 5px;
+}
+
+.form-element{
+	margin: 5px;
+}

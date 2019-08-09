@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
 	<link rel="stylesheet" href="css/master.css">
-	<link rel="stylesheet" href="css/modal.css">
 	<style>
 		header{
 			background-image: url("https://blog.csiro.au/wp-content/uploads/2018/08/file-20180822-149484-cs44toreduced.jpg");
@@ -23,11 +22,7 @@
 </head>
 
 <body>
-	<div class="modal">
-		<div class="left"><input type="button" value="<<" id="left"></div>
-		<div class="center"><img></div>
-		<div class="right"><input type="button" value=">>" id="right"></div>
-	</div>
+	
 	
 	<header>
 		<div class="row row-centered">
@@ -48,27 +43,68 @@
 	
 	<div class="empty"></div>
 	
-	<div class="container gallery">
-		<div class="row">
-			
-			<div class="coll4">
-				<div class="image">
-					<img src="https://picsum.photos/300/200">
-				</div>
-			</div>
-			
-			<div class="coll4">
-				<div class="image">
-					<img src="https://picsum.photos/300/200">
-				</div>
-			</div>
-			
-			<div class="coll4">
-				<div class="image">
-					<img src="https://picsum.photos/300/200">
-				</div>
-			</div>
+	<div class="container">
+		<div class="row row-centered">
+			<div class="coll6">
+				
+				<form>
+					<div class="form-element">
+						<div class="row">
+							<div class="coll6">
+								<div class="label">Vardas:</div>
+							</div>
+							<div class="coll6">
+								<input type="text">
+							</div>
+						</div>
+					</div>
 
+					<div class="form-element">
+						<div class="row">
+							<div class="coll6">
+								<div class="label">Pavardė:</div>
+							</div>
+							<div class="coll6">
+								<input type="text">
+							</div>
+						</div>
+					</div>
+
+
+					<div class="form-element">
+						<div class="row">
+							<div class="coll6">
+								<div class="label">El. paštas:</div>
+							</div>
+							<div class="coll6">
+								<input type="text">
+							</div>
+						</div>
+					</div>
+
+					<div class="form-element">
+						<div class="row">
+							<div class="coll6">
+								<div class="label">Komentaras:</div>
+							</div>
+							<div class="coll6">
+								<textarea></textarea>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-element">
+						<div class="row">
+							<div class="coll6">
+							</div>
+							<div class="coll6">
+								<input type="submit">
+							</div>
+						</div>
+					</div>
+					
+				</form>
+			</div>
 		</div>
 	</div>
 	
@@ -89,13 +125,5 @@
 			</div>
 		</div>
 	</footer>
-	
-	<script src="js/service.js"></script>
-	<script src="js/gallery.js"></script>
-	<script>
-		startGallery();
-
-		
-	</script>
 </body>
 </html>
